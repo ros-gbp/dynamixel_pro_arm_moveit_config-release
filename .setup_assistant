@@ -1,0 +1,8 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: dynamixel_pro_arm_description
+    relative_path: robots/arm.urdf
+  SRDF:
+    relative_path: config/dynamixel_pro_arm.srdf
+  CONFIG:
+    generated_timestamp: 1375148323

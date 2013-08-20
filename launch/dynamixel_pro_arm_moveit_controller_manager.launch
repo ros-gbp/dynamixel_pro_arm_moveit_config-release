@@ -1,0 +1,13 @@
+<launch>
+
+    <arg name="moveit_controller_manager" default="dynamixel_pro_moveit_controller_manager_plugin/DynamixelProMoveitControllerManager" />
+    <param name="moveit_controller_manager" value="$(arg moveit_controller_manager)"/>
+
+    <arg name="controller_manager_name" default="dynamixel_pro_controller_manager" />
+    <param name="controller_manager_name" value="$(arg controller_manager_name)" />
+
+    <arg name="use_controller_manager" default="true" />
+    <param name="use_controller_manager" value="$(arg use_controller_manager)" />
+    <rosparam file="$(find dynamixel_pro_arm_moveit_config)/config/controllers.yaml"/>
+
+</launch>
